@@ -1,0 +1,34 @@
+---
+# 上面和这里的两条横线必须保留，GitHub 才会编译这个样式文件
+---
+
+/* ===== 先载入主题原本的样式 ===== */
+@import "minima";
+
+/* ===== 首页顶部：照片 + 名字 + 身份 + 标签 + 链接 ===== */
+.intro { display: flex; align-items: center; gap: 28px; margin: 8px 0 8px; }
+.intro-photo { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
+.intro-name { font-size: 32px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; margin: 0 0 6px; }
+.intro-role { font-size: 17px; margin: 0; }
+.intro-org { color: #828282; margin: 0 0 12px; }
+.intro-tags { font-size: 14px; color: #828282; margin: 0 0 10px; }
+.intro-links { font-size: 15px; margin: 0; }
+
+/* 手机上改成上下排列 */
+@media (max-width: 600px) {
+  .intro { flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
+/* ===== 小节标题：About / Methods / Notes & Ideas，统一成小号灰字 + 细分隔线 ===== */
+.home h2,
+.home .post-list-heading {
+  font-size: 15px; font-weight: 600; color: #828282; letter-spacing: 0.02em;
+  border-top: 1px solid #e8e8e8; padding-top: 16px; margin: 40px 0 14px;
+}
+
+/* ===== 文章列表：日期小灰字，标题突出，摘要浅一点 ===== */
+.post-list > li { margin-bottom: 26px; }
+.post-list .post-meta { font-size: 13px; }
+.post-list h3 { margin: 2px 0 4px; }
+.post-link { font-size: 20px; }
+.post-list p { font-size: 15px; color: #555; }
