@@ -1,0 +1,24 @@
+# ===== 网站基本信息（改这里就会改整个网站）=====
+title: Fangyuan Li
+author: Fangyuan Li
+email: fangyuanlicla@gmail.com
+description: >-
+  Neuroscientist at the University of Copenhagen, studying how astrocytes,
+  neurons and blood vessels work together in the awake brain.
+github_username: fangyuanli-hub
+
+# ===== 外观主题（GitHub 自带，不用安装）=====
+theme: minima
+show_excerpts: true   # 首页文章列表显示每篇的开头一段
+
+# ===== 顶部导航栏显示哪些页面 =====
+header_pages:
+  - publications.md
+
+# ===== 插件：自动生成 RSS 订阅 =====
+plugins:
+  - jekyll-feed
+
+# ===== 不放到网站上的文件 =====
+exclude:
+  - README.md
